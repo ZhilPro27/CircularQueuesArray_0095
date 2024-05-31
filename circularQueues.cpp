@@ -41,6 +41,10 @@ class Queues {
         }
 
         void remove() {
-            
+            // Cek apakah antrian kosong
+            if (FRONT == -1) {
+                cout << "\nQueue underflow\n";
+                return;
+            }
         }
 };
